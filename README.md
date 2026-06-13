@@ -40,6 +40,8 @@ No machine learning frameworks such as PyTorch are used.
 - Optimizers
   - [ ] Adam optimizer
 - Others
+  - [ ] Benchmark + test units
+  - [ ] MNIST example
   
 
 ## Example of use
