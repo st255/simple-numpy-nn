@@ -1,9 +1,9 @@
 # Simple numpy neural network
 ---
-### Disclaimer
+#### Disclaimer
 This project was developed as a learning and research exercise to understand better how neural networks work. Feel free to use the code as you wish.
 
-# Simple NumPy Neural Network
+## Summary
 
 A simple implementation of different parts of a feed-forward neural network using numpy, including:
 
