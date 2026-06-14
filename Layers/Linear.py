@@ -6,7 +6,7 @@ class Linear(Layer):
         self.weights = np.random.randn(input_size, output_size) * np.sqrt(2.0 / input_size)
         self.biases = np.zeros((1, output_size))
 
-    def forward(self, inputs):
+    def forward(self, inputs, training: bool = True):
         self.inputs = inputs
         return np.dot(inputs, self.weights) + self.biases
 
