@@ -20,29 +20,22 @@ No machine learning frameworks such as PyTorch are used.
 
 - Layers
   - [x] Dense layers
+  - [x] Dropout
 - Activation functions
   - [x] ReLU activation
   - [x] Sigmoid activation
+  - [ ] Softmax activation
 - Loss functions
   - [x] MSE
   - [x] BCE
-- Optimizers
-  - [x] Gradient descent optimizer
-
-## Roadmap
-
-- Layers
-  - [ ] Dropout
-- Activation functions
-  - [ ] Softmax activation
-- Loss functions
   - [ ] Cross-entropy loss
 - Optimizers
+  - [x] Gradient descent optimizer
   - [ ] Adam optimizer
 - Others
   - [ ] Benchmark + test units
   - [ ] MNIST example
-  
+
 
 ## Example of use
-See `usage.py` for examples of use.
+See `example-classification.py`, `example-regression.py` and `example-dropout.py` for examples of use.
