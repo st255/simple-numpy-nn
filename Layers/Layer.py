@@ -2,7 +2,7 @@ from abc import ABC, abstractmethod
 
 class Layer(ABC):
     @abstractmethod
-    def forward(self, inputs):
+    def forward(self, inputs, training: bool = True):
         pass
 
     @abstractmethod
