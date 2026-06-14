@@ -24,6 +24,7 @@ No machine learning frameworks such as PyTorch are used.
 - Activation functions
   - [x] ReLU activation
   - [x] Sigmoid activation
+  - [x] Tanh
   - [ ] Softmax activation
 - Loss functions
   - [x] MSE
