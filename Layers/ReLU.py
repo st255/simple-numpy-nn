@@ -2,7 +2,7 @@ import numpy as np
 from Layers.Layer import Layer
 
 class ReLU(Layer):
-    def forward(self, inputs):
+    def forward(self, inputs, training: bool = True):
         self.inputs = inputs
         return np.maximum(0, inputs)
 
