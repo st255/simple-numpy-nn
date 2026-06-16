@@ -25,11 +25,11 @@ No machine learning frameworks such as PyTorch are used.
   - [x] ReLU activation
   - [x] Sigmoid activation
   - [x] Tanh
-  - [ ] Softmax activation
+  - [x] Softmax activation
 - Loss functions
   - [x] MSE
   - [x] BCE
-  - [ ] Cross-entropy loss
+  - [x] Cross-entropy loss
 - Optimizers
   - [x] Gradient descent optimizer
   - [ ] Adam optimizer
