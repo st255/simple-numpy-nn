@@ -38,7 +38,7 @@ No machine learning frameworks such as PyTorch are used.
   - [ ] Benchmark + test units
 
 ## Result
-The following model has been tested in the MNIST dataset using mini-batch training reaching an acurracy >= 99%.
+The following model has been tested in the MNIST dataset using mini-batch training for 40 epochs, reaching an acurracy >= 99%.
 
 ```python
 model_clas = Model()
@@ -58,4 +58,7 @@ Test acc: 99.35%
 
 
 ## Example of use
-See `example-classification.py`, `example-regression.py` and `example-dropout.py` for more examples of use.
+- `example-classification.py`: full dataset training for a simple classification problem. 
+- `example-regression.py`: full dataset training for a simple regression problem.
+- `example-dropout.py`: full dataset training forcing overfitting. Change the dropout rate to see how it affects the acurracy.
+- `example-mnist+batches.py`: mini-batch training for the mnist dataset.
