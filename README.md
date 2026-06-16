@@ -34,9 +34,28 @@ No machine learning frameworks such as PyTorch are used.
   - [x] Gradient descent optimizer
   - [ ] Adam optimizer
 - Others
+  - [x] MNIST example
   - [ ] Benchmark + test units
-  - [ ] MNIST example
+
+## Result
+The following model has been tested in the MNIST dataset using mini-batch training reaching an acurracy >= 99%.
+
+```python
+model_clas = Model()
+model_clas.addLayer(Linear(784, 1024))
+model_clas.addLayer(ReLU())
+model_clas.addLayer(Linear(1024, 512))
+model_clas.addLayer(ReLU())    
+model_clas.addLayer(Linear(512, 10))
+model_clas.addLayer(Softmax())
+```
+
+```
+Test acc: 99.35%
+```
+
+![MNIST results](./mnist_results.png)
 
 
 ## Example of use
-See `example-classification.py`, `example-regression.py` and `example-dropout.py` for examples of use.
+See `example-classification.py`, `example-regression.py` and `example-dropout.py` for more examples of use.
