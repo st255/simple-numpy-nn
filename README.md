@@ -37,7 +37,7 @@ No machine learning frameworks such as PyTorch are used.
   - [x] MNIST example
   - [ ] Benchmark + test units
 
-## Result
+## Results
 The following model has been tested in the MNIST dataset using mini-batch training for 40 epochs, reaching an acurracy >= 99%.
 
 ```python
