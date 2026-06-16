@@ -18,6 +18,7 @@ No machine learning frameworks such as PyTorch are used.
 
 ## How it works
 The following formulas are used to calculate the results. The input tensor must have a size (batch_size, characteristics).
+
 $$
 Z^{(t)} = A^{(t-1)} W^{(t)} + b^{(t)}
 $$
