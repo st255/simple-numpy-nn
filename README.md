@@ -24,7 +24,7 @@ Z^{(t)} = A^{(t-1)} W^{(t)} + b^{(t)}
 $$
 
 $$
-A^{(t)} = \sigma\!\left(Z^{(t)}\right)
+A^{(t)} = \sigma\left(Z^{(t)}\right)
 $$
 
 ## Implemented Features
