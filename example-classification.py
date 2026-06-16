@@ -67,7 +67,6 @@ if __name__ == "__main__":
     preds_train = model_clas.forward(X_clf)
     preds_test = model_clas.forward(X_clf)
     
-    # Calculamos métricas
     train_acc = np.mean((preds_train > 0.5).astype(int) == y_clf) * 100
     
-    print(f"\nPrecisión en Entrenamiento: {train_acc:.2f}%")
+    print(f"\nTest acc: {train_acc:.2f}%")
