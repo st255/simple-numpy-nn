@@ -16,6 +16,16 @@ A simple implementation of different parts of a feed-forward neural network usin
 
 No machine learning frameworks such as PyTorch are used.
 
+## How it works
+The following formulas are used to calculate the results. The input tensor must have a size (batch_size, characteristics).
+$$
+Z^{(t)} = A^{(t-1)} W^{(t)} + b^{(t)}
+$$
+
+$$
+A^{(t)} = \sigma\!\left(Z^{(t)}\right)
+$$
+
 ## Implemented Features
 
 - Layers
@@ -35,10 +45,11 @@ No machine learning frameworks such as PyTorch are used.
   - [ ] Adam optimizer
 - Others
   - [x] MNIST example
-  - [ ] Benchmark + test units
+  - [ ] Benchmark
+  - [ ] Test units
 
 ## Results
-The following model has been tested in the MNIST dataset using mini-batch training for 40 epochs, reaching an acurracy >= 99%.
+The following model has been tested in the MNIST dataset using mini-batch gradient descent for 40 epochs, reaching an accuracy >= 99%.
 
 ```python
 model_clas = Model()
@@ -58,7 +69,7 @@ Test acc: 99.35%
 
 
 ## Example of use
-- `example-classification.py`: full dataset training for a simple classification problem. 
-- `example-regression.py`: full dataset training for a simple regression problem.
-- `example-dropout.py`: full dataset training forcing overfitting. Change the dropout rate to see how it affects the acurracy.
-- `example-mnist+batches.py`: mini-batch training for the mnist dataset.
+- `example-classification.py`: full-batch gradient descent for a simple classification problem. 
+- `example-regression.py`: full-batch gradient descent for a simple regression problem.
+- `example-dropout.py`: full-batch gradient descent forcing overfitting. Change the dropout rate to see how it affects the acurracy.
+- `example-mnist+batches.py`: mini-batch gradient descent for the mnist dataset.
