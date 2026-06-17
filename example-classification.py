@@ -64,9 +64,8 @@ if __name__ == "__main__":
     model_clas.training = False
 
     # Evaluation of the model
-    preds_train = model_clas.forward(X_clf)
     preds_test = model_clas.forward(X_clf)
     
-    train_acc = np.mean((preds_train > 0.5).astype(int) == y_clf) * 100
+    test_acc = np.mean((preds_test > 0.5).astype(int) == y_clf) * 100
     
-    print(f"\nTest acc: {train_acc:.2f}%")
+    print(f"\nTest acc: {test_acc:.2f}%")
